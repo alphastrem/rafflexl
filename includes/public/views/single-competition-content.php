@@ -124,18 +124,18 @@ if ( is_user_logged_in() && $effective_max > 0 ) {
                     <div class="txc-quantity-select">
                         <label for="txc-qty">Number of tickets:</label>
                         <div class="txc-qty-slider" x-show="maxPerUser > 1">
-                            <input type="range" min="1" :max="maxPerUser" x-model.number="quantity" class="txc-range-slider" />
+                            <input type="range" min="1" max="<?php echo esc_attr( $effective_max ); ?>" value="1" x-model.number="quantity" class="txc-range-slider" />
                             <div class="txc-qty-slider-labels">
                                 <span>1</span>
-                                <span x-text="maxPerUser"></span>
+                                <span x-text="maxPerUser"><?php echo esc_html( $effective_max ); ?></span>
                             </div>
                         </div>
                         <div class="txc-qty-controls">
                             <button type="button" class="txc-qty-btn" @click="quantity = Math.max(1, quantity - 1)">-</button>
-                            <input type="number" id="txc-qty" x-model.number="quantity" min="1" :max="maxPerUser" class="txc-qty-input" />
+                            <input type="number" id="txc-qty" x-model.number="quantity" min="1" max="<?php echo esc_attr( $effective_max ); ?>" value="1" class="txc-qty-input" />
                             <button type="button" class="txc-qty-btn" @click="quantity = Math.min(maxPerUser, quantity + 1)">+</button>
                         </div>
-                        <div class="txc-total">Total: &pound;<span x-text="(quantity * <?php echo esc_attr( $comp->get_price() ); ?>).toFixed(2)">0.00</span></div>
+                        <div class="txc-total">Total: &pound;<span x-text="(quantity * <?php echo esc_attr( $comp->get_price() ); ?>).toFixed(2)"><?php echo esc_html( number_format( $comp->get_price(), 2 ) ); ?></span></div>
                     </div>
                     <button type="button" class="txc-btn txc-btn-primary txc-enter-btn" @click="enterCompetition()" :disabled="loading" x-text="loading ? 'Processing...' : 'Enter Now'">
                         Enter Now

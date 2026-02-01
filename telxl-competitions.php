@@ -3,7 +3,7 @@
  * Plugin Name: TelXL Competitions
  * Plugin URI: https://theeasypc.co.uk
  * Description: UK prize competition platform powered by WooCommerce. Run legally compliant competitions with qualifying questions, automated draws, and instant wins.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: TelXL
  * Author URI: https://theeasypc.co.uk
  * License: GPL-2.0+
@@ -26,7 +26,7 @@ if ( file_exists( $txc_config_file ) ) {
     require_once $txc_config_file;
 }
 
-define( 'TXC_VERSION', '1.1.1' );
+define( 'TXC_VERSION', '1.1.2' );
 define( 'TXC_PLUGIN_FILE', __FILE__ );
 define( 'TXC_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'TXC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

@@ -16,14 +16,13 @@ class TXC_Public {
             return;
         }
 
-        // Alpine.js
-        wp_enqueue_script( 'alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js', [], '3.14.8', true );
-        wp_script_add_data( 'alpinejs', 'defer', true );
-
-        // Plugin scripts
-        wp_enqueue_script( 'txc-competition', TXC_PLUGIN_URL . 'assets/js/txc-competition.js', [ 'alpinejs' ], TXC_VERSION, true );
-        wp_enqueue_script( 'txc-qualifying', TXC_PLUGIN_URL . 'assets/js/txc-qualifying.js', [ 'alpinejs' ], TXC_VERSION, true );
-        wp_enqueue_script( 'txc-draw', TXC_PLUGIN_URL . 'assets/js/txc-draw.js', [ 'alpinejs' ], TXC_VERSION, true );
+        // Alpine.js — must load AFTER component scripts so functions are
+        // defined before Alpine auto-initialises. Load without defer so
+        // execution order is deterministic.
+        wp_enqueue_script( 'txc-competition', TXC_PLUGIN_URL . 'assets/js/txc-competition.js', [], TXC_VERSION, true );
+        wp_enqueue_script( 'txc-qualifying', TXC_PLUGIN_URL . 'assets/js/txc-qualifying.js', [], TXC_VERSION, true );
+        wp_enqueue_script( 'txc-draw', TXC_PLUGIN_URL . 'assets/js/txc-draw.js', [], TXC_VERSION, true );
+        wp_enqueue_script( 'alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js', [ 'txc-competition', 'txc-qualifying', 'txc-draw' ], '3.14.8', true );
 
         wp_localize_script( 'txc-competition', 'txcPublic', [
             'ajaxUrl'   => admin_url( 'admin-ajax.php' ),
@@ -117,11 +116,32 @@ class TXC_Public {
     }
 
     private function is_competition_page() {
-        return is_singular( 'txc_competition' )
-            || is_post_type_archive( 'txc_competition' )
-            || has_shortcode( get_post()->post_content ?? '', 'txc_competitions' )
-            || has_shortcode( get_post()->post_content ?? '', 'txc_competition' )
-            || has_shortcode( get_post()->post_content ?? '', 'txc_winners' );
+        // Direct conditional checks.
+        if ( is_singular( 'txc_competition' ) || is_post_type_archive( 'txc_competition' ) ) {
+            return true;
+        }
+
+        // Fallback: check the global $post directly (handles block themes
+        // where is_singular() may not resolve correctly during enqueue).
+        global $post;
+        if ( $post && 'txc_competition' === get_post_type( $post ) ) {
+            return true;
+        }
+
+        // Page with slug 'competitions' (our template_include override).
+        if ( is_page( 'competitions' ) ) {
+            return true;
+        }
+
+        // Pages with competition shortcodes.
+        $content = ( $post && ! empty( $post->post_content ) ) ? $post->post_content : '';
+        if ( has_shortcode( $content, 'txc_competitions' )
+            || has_shortcode( $content, 'txc_competition' )
+            || has_shortcode( $content, 'txc_winners' ) ) {
+            return true;
+        }
+
+        return false;
     }
 
     private function is_account_page() {

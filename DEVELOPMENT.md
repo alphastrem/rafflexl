@@ -12,7 +12,7 @@
 - **Tech stack:** PHP 8.0+, WordPress 6.0+, WooCommerce 8.0+, Alpine.js 3.14.8, MySQL/MariaDB
 - **License:** GPL-2.0+ with commercial license server at `https://license.theeasypc.co.uk`
 - **Repository:** `https://github.com/alphastrem/rafflexl` (private)
-- **Current version:** 1.1.1
+- **Current version:** 1.1.2
 
 ---
 
@@ -480,7 +480,20 @@ All `_txc_*` meta keys on `txc_competition` posts:
 
 ## 14. Version History
 
-### v1.1.1 (2026-02-01) — Current
+### v1.1.2 (2026-02-01) — Current
+
+**Bug fixes:**
+- Fixed Alpine.js and plugin scripts not loading on single competition pages
+  - Root cause: `is_competition_page()` relied on `is_singular('txc_competition')` which fails in block themes (Twenty Twenty-Four) during `wp_enqueue_scripts`
+  - Fix: Added fallback check on global `$post` object, plus `is_page('competitions')` check
+  - Also fixed unsafe `get_post()->post_content` access that could error when `get_post()` returns null
+- Fixed Alpine.js loading order — component scripts now load BEFORE Alpine so functions are defined when Alpine auto-initialises
+- Fixed slider starting at midpoint — added explicit `value="1"` and `max` HTML attributes as fallback for pre-Alpine rendering
+- Fixed quantity input showing empty — added `value="1"` fallback
+- Fixed total showing £0.00 — added server-rendered price as fallback text
+- All interactive elements (countdown, slider, +/- buttons, total, Enter button) now work correctly
+
+### v1.1.1 (2026-02-01)
 
 **Bug fix:**
 - Fixed competitions not appearing on the front-end `/competitions/` page
