@@ -2,6 +2,11 @@
 /**
  * Template: Single Competition
  */
+
+// Enqueue assets directly — ensures scripts load regardless of
+// whether the wp_enqueue_scripts detection fires correctly.
+TXC_Public::force_enqueue_assets();
+
 get_header();
 
 while ( have_posts() ) :

@@ -2,6 +2,7 @@
 /**
  * Template: Competition Archive
  */
+TXC_Public::force_enqueue_assets();
 get_header();
 ?>
 <div class="txc-page-wrapper">

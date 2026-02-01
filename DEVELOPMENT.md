@@ -12,7 +12,7 @@
 - **Tech stack:** PHP 8.0+, WordPress 6.0+, WooCommerce 8.0+, Alpine.js 3.14.8, MySQL/MariaDB
 - **License:** GPL-2.0+ with commercial license server at `https://license.theeasypc.co.uk`
 - **Repository:** `https://github.com/alphastrem/rafflexl` (private)
-- **Current version:** 1.1.2
+- **Current version:** 1.1.3
 
 ---
 
@@ -480,7 +480,16 @@ All `_txc_*` meta keys on `txc_competition` posts:
 
 ## 14. Version History
 
-### v1.1.2 (2026-02-01) — Current
+### v1.1.3 (2026-02-01) — Current
+
+**Bug fix:**
+- Fixed Alpine.js and plugin scripts STILL not loading on competition pages
+  - Root cause: The `wp_enqueue_scripts` hook detection (`is_competition_page()`) returned false despite WordPress body class confirming `single-txc_competition`. Exact cause unclear — likely a timing issue with conditional tags during `wp_head()` before `the_post()` is called in the template loop.
+  - Fix: Templates now call `TXC_Public::force_enqueue_assets()` directly BEFORE `get_header()`, registering the enqueue callback at priority 5 on `wp_enqueue_scripts`. This guarantees scripts load whenever the template renders — no conditional tag detection needed.
+  - The `is_competition_page()` fallback still exists for shortcode pages and My Account.
+  - Refactored asset enqueue into a single static `do_enqueue()` method (CSS + JS + Alpine + localize) to avoid duplication.
+
+### v1.1.2 (2026-02-01)
 
 **Bug fixes:**
 - Fixed Alpine.js and plugin scripts not loading on single competition pages

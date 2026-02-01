@@ -5,20 +5,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class TXC_Public {
 
-    public function enqueue_styles() {
-        if ( $this->is_competition_page() || $this->is_account_page() ) {
-            wp_enqueue_style( 'txc-public', TXC_PLUGIN_URL . 'assets/css/txc-public.css', [], TXC_VERSION );
-        }
+    /**
+     * Called from templates directly to guarantee assets are enqueued.
+     * Uses wp_enqueue_scripts hook so assets appear in the correct location.
+     */
+    public static function force_enqueue_assets() {
+        add_action( 'wp_enqueue_scripts', [ __CLASS__, 'do_enqueue' ], 5 );
     }
 
-    public function enqueue_scripts() {
-        if ( ! $this->is_competition_page() && ! $this->is_account_page() ) {
-            return;
-        }
+    /**
+     * Enqueue all frontend assets (static callback).
+     */
+    public static function do_enqueue() {
+        // CSS
+        wp_enqueue_style( 'txc-public', TXC_PLUGIN_URL . 'assets/css/txc-public.css', [], TXC_VERSION );
 
-        // Alpine.js — must load AFTER component scripts so functions are
-        // defined before Alpine auto-initialises. Load without defer so
-        // execution order is deterministic.
+        // JS — component scripts first, Alpine last so functions exist
+        // when Alpine auto-initialises and processes x-data attributes.
         wp_enqueue_script( 'txc-competition', TXC_PLUGIN_URL . 'assets/js/txc-competition.js', [], TXC_VERSION, true );
         wp_enqueue_script( 'txc-qualifying', TXC_PLUGIN_URL . 'assets/js/txc-qualifying.js', [], TXC_VERSION, true );
         wp_enqueue_script( 'txc-draw', TXC_PLUGIN_URL . 'assets/js/txc-draw.js', [], TXC_VERSION, true );
@@ -27,13 +30,27 @@ class TXC_Public {
         wp_localize_script( 'txc-competition', 'txcPublic', [
             'ajaxUrl'   => admin_url( 'admin-ajax.php' ),
             'nonce'     => wp_create_nonce( 'txc_public_nonce' ),
-            'cartUrl'   => wc_get_cart_url(),
-            'accountUrl' => wc_get_account_endpoint_url( 'competitions' ),
+            'cartUrl'   => function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : '',
+            'accountUrl' => function_exists( 'wc_get_account_endpoint_url' ) ? wc_get_account_endpoint_url( 'competitions' ) : '',
         ] );
 
-        // YouTube IFrame API if needed
         if ( txc_addon_enabled( 'youtube' ) ) {
             wp_enqueue_script( 'youtube-iframe-api', 'https://www.youtube.com/iframe_api', [], null, true );
+        }
+    }
+
+    public function enqueue_styles() {
+        if ( $this->is_competition_page() || $this->is_account_page() ) {
+            self::do_enqueue();
+        }
+    }
+
+    public function enqueue_scripts() {
+        // Assets may already be enqueued via force_enqueue_assets() from
+        // the template. Calling do_enqueue() again is safe — WordPress
+        // deduplicates by handle.
+        if ( $this->is_competition_page() || $this->is_account_page() ) {
+            self::do_enqueue();
         }
     }
 
