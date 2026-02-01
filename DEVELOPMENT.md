@@ -525,7 +525,7 @@ All `_txc_*` meta keys on `txc_competition` posts:
 - [ ] `languages/` is empty — no i18n `.pot` file generated
 - [ ] No unit or integration tests
 - [ ] `TXC_Pause_Mode::handle_toggle()` is minimal — pause is handled via Settings page save
-- [ ] Auto-update: GitHub PAT token needed when repo goes private (see token setup instructions in Step 4 of plan)
+- [x] ~~Auto-update: GitHub PAT token needed when repo goes private~~ (done — fine-grained PAT hardcoded in `TXC_Updater`, expires ~Feb 2027)
 - [ ] The draw date must be re-saved after the v1.1.0 timezone fix if dates were saved under v1.0.0
 
 ---
@@ -657,17 +657,20 @@ On every WordPress admin page load, the library checks (with caching) GitHub's r
 The user sees the update in Dashboard > Updates and in the Plugins list. Clicking "Update Now" downloads the ZIP attached to the GitHub Release and installs it.
 
 ### Private Repo Access
-When the repo is private, requests to GitHub's API require authentication. The `TXC_Updater` class reads `TXC_GITHUB_TOKEN` (defined in `txc-config.php`) and passes it to the library via `setAuthentication()`.
+When the repo is private, requests to GitHub's API require authentication. The `TXC_Updater` class uses a two-tier token strategy:
 
-For end-user sites that receive the plugin as a ZIP (without `txc-config.php`), the token must be hardcoded as a fallback in `TXC_Updater`. This is a **fine-grained GitHub PAT** with read-only access to the single repository.
+1. **Config override:** If `TXC_GITHUB_TOKEN` is defined in `txc-config.php`, that value is used (for development).
+2. **Hardcoded fallback:** A fine-grained PAT is hardcoded in the class for end-user sites that receive the plugin as a ZIP (without `txc-config.php`).
 
-### Creating the Token
+The fallback token is a fine-grained GitHub PAT with read-only Contents and Metadata access, scoped to the `alphastrem/rafflexl` repository only. **Token expires approximately February 2027** — renew before then.
+
+### Renewing the Token
 1. Go to https://github.com/settings/tokens?type=beta
 2. Generate new token: name `rafflexl-updater`, 1-year expiry
 3. Repository access: Only select `alphastrem/rafflexl`
 4. Permissions: Contents (Read-only), Metadata (Read-only)
-5. Update `TXC_Updater::init()` with the token as fallback
-6. Update `txc-config.php` with the token for development
+5. Replace the hardcoded token string in `TXC_Updater::init()`
+6. Update `txc-config.php` with the new token for development
 
 ### GitHub Actions
 The `.github/workflows/release.yml` workflow automatically builds a clean ZIP and attaches it to GitHub Releases when a tag is pushed. The ZIP excludes `.git`, `.github`, `.gitignore`, `txc-config.php`, and `txc-config-sample.php`.
