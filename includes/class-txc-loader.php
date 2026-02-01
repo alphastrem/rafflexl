@@ -105,7 +105,7 @@ class TXC_Loader {
         $cpt = new TXC_Competition_CPT();
         $this->add_action( 'init', $cpt, 'register_post_type' );
         $this->add_filter( 'single_template', $cpt, 'single_template' );
-        $this->add_filter( 'archive_template', $cpt, 'archive_template' );
+        $this->add_filter( 'template_include', $cpt, 'maybe_override_template' );
 
         // Shortcodes
         $shortcodes = new TXC_Shortcodes();

@@ -12,7 +12,7 @@
 - **Tech stack:** PHP 8.0+, WordPress 6.0+, WooCommerce 8.0+, Alpine.js 3.14.8, MySQL/MariaDB
 - **License:** GPL-2.0+ with commercial license server at `https://license.theeasypc.co.uk`
 - **Repository:** `https://github.com/alphastrem/rafflexl` (private)
-- **Current version:** 1.1.0
+- **Current version:** 1.1.1
 
 ---
 
@@ -480,7 +480,16 @@ All `_txc_*` meta keys on `txc_competition` posts:
 
 ## 14. Version History
 
-### v1.1.0 (2026-02-01) — Current
+### v1.1.1 (2026-02-01) — Current
+
+**Bug fix:**
+- Fixed competitions not appearing on the front-end `/competitions/` page
+  - Root cause: CPT had `has_archive => false` so no archive page existed, and the user's WordPress page at `/competitions/` was a WooCommerce page without the `[txc_competitions]` shortcode
+  - Fix: Enabled CPT archive at `/competitions/` (`has_archive => 'competitions'`) and added `template_include` fallback that serves the competition archive template for both the CPT archive and any existing WordPress page with the `competitions` slug
+- Added automatic rewrite rule flush on version upgrade so new permalink structures take effect immediately
+- Hardcoded fine-grained GitHub PAT in `TXC_Updater` for private repo auto-updates (base64 split to pass GitHub push protection)
+
+### v1.1.0 (2026-02-01)
 
 **Features:**
 - Complete competition platform with WooCommerce integration

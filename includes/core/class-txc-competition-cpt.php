@@ -29,7 +29,7 @@ class TXC_Competition_CPT {
             'query_var'           => true,
             'rewrite'             => [ 'slug' => 'competition', 'with_front' => false ],
             'capability_type'     => 'post',
-            'has_archive'         => false,
+            'has_archive'         => 'competitions',
             'hierarchical'        => false,
             'menu_icon'           => 'dashicons-tickets-alt',
             'supports'            => [ 'title', 'editor', 'thumbnail' ],
@@ -50,13 +50,25 @@ class TXC_Competition_CPT {
         return $template;
     }
 
-    public function archive_template( $template ) {
+    public function maybe_override_template( $template ) {
+        // CPT archive at /competitions/
         if ( is_post_type_archive( 'txc_competition' ) ) {
             $custom = TXC_PLUGIN_DIR . 'templates/archive-competition.php';
             if ( file_exists( $custom ) ) {
                 return $custom;
             }
         }
+
+        // Fallback: if a WordPress page exists at /competitions/ it takes
+        // priority over the CPT archive in rewrite rules. Serve our template
+        // for that page so competitions still display.
+        if ( is_page( 'competitions' ) ) {
+            $custom = TXC_PLUGIN_DIR . 'templates/archive-competition.php';
+            if ( file_exists( $custom ) ) {
+                return $custom;
+            }
+        }
+
         return $template;
     }
 }
