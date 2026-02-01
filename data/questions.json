@@ -1,0 +1,1502 @@
+[
+  {
+    "question": "What colour are the double-decker buses most commonly seen in London?",
+    "a": "Blue",
+    "b": "Green",
+    "c": "Red",
+    "d": "Yellow",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many days are there in a standard (non-leap) year?",
+    "a": "365",
+    "b": "364",
+    "c": "366",
+    "d": "360",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "a": "Jupiter",
+    "b": "Venus",
+    "c": "Saturn",
+    "d": "Mars",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the currency used in the United Kingdom?",
+    "a": "Dollar",
+    "b": "Pound Sterling",
+    "c": "Euro",
+    "d": "Franc",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which animal is known as man's best friend?",
+    "a": "Dog",
+    "b": "Horse",
+    "c": "Rabbit",
+    "d": "Cat",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the 'S' stand for in NASA?",
+    "a": "Science",
+    "b": "Solar",
+    "c": "System",
+    "d": "Space",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many colours are there in a rainbow?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the name of the British national anthem?",
+    "a": "Rule Britannia",
+    "b": "God Save the King",
+    "c": "Land of Hope and Glory",
+    "d": "Jerusalem",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which month of the year has the fewest days?",
+    "a": "February",
+    "b": "April",
+    "c": "June",
+    "d": "September",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What are the three primary colours?",
+    "a": "Red, Green, Blue",
+    "b": "Red, Orange, Yellow",
+    "c": "Blue, Green, Purple",
+    "d": "Red, Yellow, Blue",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many sides does a triangle have?",
+    "a": "4",
+    "b": "3",
+    "c": "5",
+    "d": "6",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of creature is a Labrador?",
+    "a": "Cat",
+    "b": "Horse",
+    "c": "Dog",
+    "d": "Bird",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which gas do humans breathe in to survive?",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Carbon Dioxide",
+    "d": "Hydrogen",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "a": "Atlantic",
+    "b": "Indian",
+    "c": "Arctic",
+    "d": "Pacific",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many letters are in the English alphabet?",
+    "a": "24",
+    "b": "26",
+    "c": "25",
+    "d": "27",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the main language spoken in the United Kingdom?",
+    "a": "French",
+    "b": "German",
+    "c": "English",
+    "d": "Spanish",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many wheels does a bicycle have?",
+    "a": "2",
+    "b": "3",
+    "c": "4",
+    "d": "1",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which precious stone is red in colour?",
+    "a": "Sapphire",
+    "b": "Emerald",
+    "c": "Diamond",
+    "d": "Ruby",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is frozen water called?",
+    "a": "Steam",
+    "b": "Ice",
+    "c": "Sleet",
+    "d": "Vapour",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which day of the week comes after Wednesday?",
+    "a": "Thursday",
+    "b": "Tuesday",
+    "c": "Friday",
+    "d": "Monday",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the boiling point of water in degrees Celsius?",
+    "a": "90",
+    "b": "100",
+    "c": "110",
+    "d": "120",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a baby dog called?",
+    "a": "Kitten",
+    "b": "Cub",
+    "c": "Puppy",
+    "d": "Foal",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which shape has four equal sides and four right angles?",
+    "a": "Rectangle",
+    "b": "Rhombus",
+    "c": "Trapezium",
+    "d": "Square",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "In which direction does the sun rise?",
+    "a": "East",
+    "b": "North",
+    "c": "West",
+    "d": "South",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What colour do you get when you mix red and white?",
+    "a": "Orange",
+    "b": "Pink",
+    "c": "Purple",
+    "d": "Peach",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "How many hours are in one day?",
+    "a": "12",
+    "b": "20",
+    "c": "24",
+    "d": "48",
+    "correct": "c",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "Which season comes after summer in the UK?",
+    "a": "Winter",
+    "b": "Spring",
+    "c": "Monsoon",
+    "d": "Autumn",
+    "correct": "d",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of animal is a goldfish?",
+    "a": "Fish",
+    "b": "Reptile",
+    "c": "Amphibian",
+    "d": "Mammal",
+    "correct": "a",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the opposite of 'hot'?",
+    "a": "Warm",
+    "b": "Cold",
+    "c": "Cool",
+    "d": "Mild",
+    "correct": "b",
+    "category": "general",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the capital city of England?",
+    "a": "Birmingham",
+    "b": "Manchester",
+    "c": "London",
+    "d": "Liverpool",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which river flows through London?",
+    "a": "Thames",
+    "b": "Mersey",
+    "c": "Severn",
+    "d": "Tyne",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the capital city of Scotland?",
+    "a": "Glasgow",
+    "b": "Aberdeen",
+    "c": "Dundee",
+    "d": "Edinburgh",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the capital city of Wales?",
+    "a": "Swansea",
+    "b": "Cardiff",
+    "c": "Newport",
+    "d": "Bangor",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which country in the UK is known for its lochs and highlands?",
+    "a": "Scotland",
+    "b": "Wales",
+    "c": "England",
+    "d": "Northern Ireland",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "The White Cliffs are a famous landmark in which English county?",
+    "a": "Sussex",
+    "b": "Essex",
+    "c": "Kent",
+    "d": "Hampshire",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which English city is famous for its Roman baths?",
+    "a": "York",
+    "b": "Chester",
+    "c": "Canterbury",
+    "d": "Bath",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the longest river in the United Kingdom?",
+    "a": "Severn",
+    "b": "Thames",
+    "c": "Trent",
+    "d": "Mersey",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Snowdon is the highest mountain in which country?",
+    "a": "England",
+    "b": "Wales",
+    "c": "Scotland",
+    "d": "Ireland",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which city is known as the 'Steel City' in the UK?",
+    "a": "Birmingham",
+    "b": "Leeds",
+    "c": "Sheffield",
+    "d": "Coventry",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "The Lake District is located in which part of England?",
+    "a": "South East",
+    "b": "East Midlands",
+    "c": "South West",
+    "d": "North West",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Scottish lake is said to be home to a famous monster?",
+    "a": "Loch Ness",
+    "b": "Loch Lomond",
+    "c": "Loch Katrine",
+    "d": "Loch Tay",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the capital city of Northern Ireland?",
+    "a": "Derry",
+    "b": "Belfast",
+    "c": "Newry",
+    "d": "Lisburn",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Ben Nevis, the UK's highest peak, is in which country?",
+    "a": "Wales",
+    "b": "England",
+    "c": "Scotland",
+    "d": "Northern Ireland",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which English county is known as the 'Garden of England'?",
+    "a": "Surrey",
+    "b": "Devon",
+    "c": "Suffolk",
+    "d": "Kent",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "The Giant's Causeway is found in which part of the UK?",
+    "a": "Northern Ireland",
+    "b": "Wales",
+    "c": "Scotland",
+    "d": "England",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which city is further north: Manchester or Birmingham?",
+    "a": "Birmingham",
+    "b": "Manchester",
+    "c": "They are the same latitude",
+    "d": "Neither is in the north",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "The Pennines mountain range runs through which part of England?",
+    "a": "The South",
+    "b": "The East",
+    "c": "The North",
+    "d": "The West",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which body of water separates England from France?",
+    "a": "Strait of Gibraltar",
+    "b": "Irish Sea",
+    "c": "North Sea",
+    "d": "English Channel",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Stonehenge is located in which English county?",
+    "a": "Wiltshire",
+    "b": "Dorset",
+    "c": "Somerset",
+    "d": "Devon",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which UK city has the postcode prefix 'B'?",
+    "a": "Bristol",
+    "b": "Birmingham",
+    "c": "Brighton",
+    "d": "Bradford",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "The River Mersey runs through which major English city?",
+    "a": "Manchester",
+    "b": "Leeds",
+    "c": "Liverpool",
+    "d": "Newcastle",
+    "correct": "c",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which island lies between England and Ireland in the Irish Sea?",
+    "a": "Isle of Wight",
+    "b": "Anglesey",
+    "c": "Skye",
+    "d": "Isle of Man",
+    "correct": "d",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Cornwall is located at which tip of England?",
+    "a": "South West",
+    "b": "South East",
+    "c": "North East",
+    "d": "North West",
+    "correct": "a",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "Which English city is home to the famous 'Angel of the North' sculpture?",
+    "a": "Sunderland",
+    "b": "Gateshead",
+    "c": "Durham",
+    "d": "Newcastle",
+    "correct": "b",
+    "category": "uk_geography",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "a": "CO2",
+    "b": "O2",
+    "c": "H2O",
+    "d": "NaCl",
+    "correct": "c",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the closest star to Earth?",
+    "a": "Polaris",
+    "b": "Sirius",
+    "c": "Alpha Centauri",
+    "d": "The Sun",
+    "correct": "d",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "How many bones does an adult human body have?",
+    "a": "206",
+    "b": "106",
+    "c": "306",
+    "d": "186",
+    "correct": "a",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "a": "Go",
+    "b": "Au",
+    "c": "Gd",
+    "d": "Ag",
+    "correct": "b",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "Which organ in the human body pumps blood?",
+    "a": "Lungs",
+    "b": "Brain",
+    "c": "Heart",
+    "d": "Liver",
+    "correct": "c",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+    "a": "Oxygen",
+    "b": "Nitrogen",
+    "c": "Hydrogen",
+    "d": "Carbon Dioxide",
+    "correct": "d",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "a": "Diamond",
+    "b": "Iron",
+    "c": "Gold",
+    "d": "Quartz",
+    "correct": "a",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What force keeps us on the ground?",
+    "a": "Magnetism",
+    "b": "Gravity",
+    "c": "Friction",
+    "d": "Inertia",
+    "correct": "b",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "Which planet is the largest in our solar system?",
+    "a": "Saturn",
+    "b": "Neptune",
+    "c": "Jupiter",
+    "d": "Uranus",
+    "correct": "c",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "a": "6",
+    "b": "10",
+    "c": "12",
+    "d": "8",
+    "correct": "d",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What part of the body do you use to hear?",
+    "a": "Ears",
+    "b": "Nose",
+    "c": "Eyes",
+    "d": "Mouth",
+    "correct": "a",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "Which vitamin do you get from sunlight?",
+    "a": "Vitamin A",
+    "b": "Vitamin D",
+    "c": "Vitamin C",
+    "d": "Vitamin B",
+    "correct": "b",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of animal is a whale?",
+    "a": "Fish",
+    "b": "Reptile",
+    "c": "Mammal",
+    "d": "Amphibian",
+    "correct": "c",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "At what temperature in Celsius does water freeze?",
+    "a": "4",
+    "b": "-10",
+    "c": "10",
+    "d": "0",
+    "correct": "d",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the main gas found in the air we breathe?",
+    "a": "Nitrogen",
+    "b": "Carbon Dioxide",
+    "c": "Oxygen",
+    "d": "Helium",
+    "correct": "a",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "How many planets are there in our solar system?",
+    "a": "7",
+    "b": "8",
+    "c": "9",
+    "d": "10",
+    "correct": "b",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What colour is a ruby?",
+    "a": "Blue",
+    "b": "Green",
+    "c": "Red",
+    "d": "Yellow",
+    "correct": "c",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the smallest bone in the human body?",
+    "a": "Femur",
+    "b": "Radius",
+    "c": "Phalanx",
+    "d": "Stapes",
+    "correct": "d",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "Which gas makes fizzy drinks bubbly?",
+    "a": "Carbon Dioxide",
+    "b": "Nitrogen",
+    "c": "Helium",
+    "d": "Oxygen",
+    "correct": "a",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the largest organ of the human body?",
+    "a": "Liver",
+    "b": "Skin",
+    "c": "Brain",
+    "d": "Lungs",
+    "correct": "b",
+    "category": "science",
+    "difficulty": 1
+  },
+  {
+    "question": "Who was the first King of England to be called Henry?",
+    "a": "Henry VIII",
+    "b": "Henry II",
+    "c": "Henry I",
+    "d": "Henry V",
+    "correct": "c",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "In which year did World War II end?",
+    "a": "1943",
+    "b": "1944",
+    "c": "1946",
+    "d": "1945",
+    "correct": "d",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which famous nurse served during the Crimean War?",
+    "a": "Florence Nightingale",
+    "b": "Edith Cavell",
+    "c": "Mary Seacole",
+    "d": "Clara Barton",
+    "correct": "a",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "The Great Fire of London occurred in which year?",
+    "a": "1566",
+    "b": "1666",
+    "c": "1766",
+    "d": "1606",
+    "correct": "b",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Who was the British Prime Minister during most of World War II?",
+    "a": "Neville Chamberlain",
+    "b": "Clement Attlee",
+    "c": "Winston Churchill",
+    "d": "Anthony Eden",
+    "correct": "c",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which English king had six wives?",
+    "a": "Henry V",
+    "b": "Henry VII",
+    "c": "Edward VI",
+    "d": "Henry VIII",
+    "correct": "d",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "The Titanic sank on its maiden voyage in which year?",
+    "a": "1912",
+    "b": "1911",
+    "c": "1910",
+    "d": "1913",
+    "correct": "a",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "In which year did World War I begin?",
+    "a": "1912",
+    "b": "1914",
+    "c": "1913",
+    "d": "1915",
+    "correct": "b",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Who was the first person to walk on the Moon?",
+    "a": "Buzz Aldrin",
+    "b": "Yuri Gagarin",
+    "c": "Neil Armstrong",
+    "d": "Michael Collins",
+    "correct": "c",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which historical figure is famous for discovering gravity when an apple fell?",
+    "a": "Albert Einstein",
+    "b": "Galileo Galilei",
+    "c": "Charles Darwin",
+    "d": "Isaac Newton",
+    "correct": "d",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "What were the names of the two houses in the Wars of the Roses?",
+    "a": "Lancaster and York",
+    "b": "Tudor and Stuart",
+    "c": "Windsor and Hanover",
+    "d": "Plantagenet and Norman",
+    "correct": "a",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "In which century was the Roman invasion of Britain?",
+    "a": "3rd century AD",
+    "b": "1st century AD",
+    "c": "5th century AD",
+    "d": "1st century BC",
+    "correct": "b",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which famous battle took place in 1066?",
+    "a": "Battle of Waterloo",
+    "b": "Battle of Trafalgar",
+    "c": "Battle of Hastings",
+    "d": "Battle of Agincourt",
+    "correct": "c",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Who was Queen of England for most of the 20th century?",
+    "a": "Queen Victoria",
+    "b": "Queen Mary",
+    "c": "Queen Anne",
+    "d": "Queen Elizabeth II",
+    "correct": "d",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "The Gunpowder Plot of 1605 was led by which figure?",
+    "a": "Guy Fawkes",
+    "b": "Oliver Cromwell",
+    "c": "Walter Raleigh",
+    "d": "Francis Drake",
+    "correct": "a",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "a": "England",
+    "b": "France",
+    "c": "Spain",
+    "d": "Italy",
+    "correct": "b",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "In which decade did the Berlin Wall fall?",
+    "a": "1970s",
+    "b": "1990s",
+    "c": "1980s",
+    "d": "2000s",
+    "correct": "c",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Which ancient civilisation built the pyramids at Giza?",
+    "a": "Romans",
+    "b": "Greeks",
+    "c": "Persians",
+    "d": "Egyptians",
+    "correct": "d",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "Who wrote the famous plays 'Romeo and Juliet' and 'Hamlet'?",
+    "a": "William Shakespeare",
+    "b": "Charles Dickens",
+    "c": "Christopher Marlowe",
+    "d": "Jane Austen",
+    "correct": "a",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "The D-Day landings took place on the beaches of which country?",
+    "a": "Belgium",
+    "b": "France",
+    "c": "Netherlands",
+    "d": "Italy",
+    "correct": "b",
+    "category": "history",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 7 multiplied by 8?",
+    "a": "54",
+    "b": "48",
+    "c": "56",
+    "d": "58",
+    "correct": "c",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 15% of 200?",
+    "a": "20",
+    "b": "25",
+    "c": "35",
+    "d": "30",
+    "correct": "d",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the square root of 144?",
+    "a": "12",
+    "b": "11",
+    "c": "10",
+    "d": "14",
+    "correct": "a",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "How many centimetres are in one metre?",
+    "a": "10",
+    "b": "100",
+    "c": "1000",
+    "d": "50",
+    "correct": "b",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is half of 250?",
+    "a": "100",
+    "b": "120",
+    "c": "125",
+    "d": "150",
+    "correct": "c",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 9 squared?",
+    "a": "72",
+    "b": "90",
+    "c": "18",
+    "d": "81",
+    "correct": "d",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "How many millilitres are in one litre?",
+    "a": "1000",
+    "b": "500",
+    "c": "100",
+    "d": "10000",
+    "correct": "a",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 456 rounded to the nearest hundred?",
+    "a": "400",
+    "b": "500",
+    "c": "460",
+    "d": "450",
+    "correct": "b",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "If you buy 3 items at \u00a34.50 each, what is the total?",
+    "a": "\u00a312.00",
+    "b": "\u00a312.50",
+    "c": "\u00a313.50",
+    "d": "\u00a314.50",
+    "correct": "c",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "How many degrees are in a right angle?",
+    "a": "45",
+    "b": "180",
+    "c": "360",
+    "d": "90",
+    "correct": "d",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 1000 minus 387?",
+    "a": "613",
+    "b": "623",
+    "c": "713",
+    "d": "603",
+    "correct": "a",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a quarter of 80?",
+    "a": "15",
+    "b": "20",
+    "c": "25",
+    "d": "40",
+    "correct": "b",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "How many grams are in one kilogram?",
+    "a": "10",
+    "b": "100",
+    "c": "1000",
+    "d": "10000",
+    "correct": "c",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 12 multiplied by 12?",
+    "a": "124",
+    "b": "132",
+    "c": "148",
+    "d": "144",
+    "correct": "d",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "What is 10% of \u00a3350?",
+    "a": "\u00a335",
+    "b": "\u00a333",
+    "c": "\u00a330",
+    "d": "\u00a337",
+    "correct": "a",
+    "category": "maths",
+    "difficulty": 1
+  },
+  {
+    "question": "In which sport would you perform a 'century'?",
+    "a": "Football",
+    "b": "Cricket",
+    "c": "Tennis",
+    "d": "Rugby",
+    "correct": "b",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "How many players are on a football pitch per team during a match?",
+    "a": "9",
+    "b": "10",
+    "c": "11",
+    "d": "12",
+    "correct": "c",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "In tennis, what is a score of zero called?",
+    "a": "Nil",
+    "b": "Duck",
+    "c": "Nought",
+    "d": "Love",
+    "correct": "d",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "Which sport is played at Wimbledon?",
+    "a": "Tennis",
+    "b": "Golf",
+    "c": "Cricket",
+    "d": "Rugby",
+    "correct": "a",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "How many points is a try worth in rugby union?",
+    "a": "3",
+    "b": "5",
+    "c": "4",
+    "d": "6",
+    "correct": "b",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "In which sport is the Ashes series contested?",
+    "a": "Rugby",
+    "b": "Football",
+    "c": "Cricket",
+    "d": "Hockey",
+    "correct": "c",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "Which country hosted the 2012 Summer Olympics?",
+    "a": "China",
+    "b": "USA",
+    "c": "Brazil",
+    "d": "UK",
+    "correct": "d",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "What colour card is shown for a sending off in football?",
+    "a": "Red",
+    "b": "Yellow",
+    "c": "Green",
+    "d": "Blue",
+    "correct": "a",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "How many holes are played in a standard round of golf?",
+    "a": "9",
+    "b": "18",
+    "c": "12",
+    "d": "21",
+    "correct": "b",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "In which sport would you use a shuttlecock?",
+    "a": "Table Tennis",
+    "b": "Squash",
+    "c": "Badminton",
+    "d": "Volleyball",
+    "correct": "c",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the national sport of England?",
+    "a": "Football",
+    "b": "Rugby",
+    "c": "Tennis",
+    "d": "Cricket",
+    "correct": "d",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "How many Olympic rings are there?",
+    "a": "5",
+    "b": "4",
+    "c": "6",
+    "d": "7",
+    "correct": "a",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "In darts, what is the highest possible score with a single dart?",
+    "a": "50",
+    "b": "60",
+    "c": "57",
+    "d": "100",
+    "correct": "b",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "Which football club plays at Anfield?",
+    "a": "Everton",
+    "b": "Manchester United",
+    "c": "Liverpool",
+    "d": "Arsenal",
+    "correct": "c",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "How long is a marathon in miles (approximately)?",
+    "a": "20 miles",
+    "b": "24 miles",
+    "c": "30 miles",
+    "d": "26 miles",
+    "correct": "d",
+    "category": "sport",
+    "difficulty": 1
+  },
+  {
+    "question": "Which fictional wizard attends Hogwarts School?",
+    "a": "Harry Potter",
+    "b": "Gandalf",
+    "c": "Merlin",
+    "d": "Dumbledore",
+    "correct": "a",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the name of the famous clock tower at the Houses of Parliament?",
+    "a": "Big Bill",
+    "b": "Big Ben",
+    "c": "Elizabeth Tower",
+    "d": "Clock Tower",
+    "correct": "b",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which band performed the hit song 'Bohemian Rhapsody'?",
+    "a": "The Beatles",
+    "b": "Led Zeppelin",
+    "c": "Queen",
+    "d": "The Rolling Stones",
+    "correct": "c",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "In the TV show 'Only Fools and Horses', what is Del Boy's surname?",
+    "a": "Turner",
+    "b": "Tucker",
+    "c": "Taylor",
+    "d": "Trotter",
+    "correct": "d",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Disney film features a character called Simba?",
+    "a": "The Lion King",
+    "b": "Bambi",
+    "c": "The Jungle Book",
+    "d": "Aladdin",
+    "correct": "a",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which British TV show features bakers competing to impress Paul Hollywood?",
+    "a": "MasterChef",
+    "b": "The Great British Bake Off",
+    "c": "Come Dine With Me",
+    "d": "Saturday Kitchen",
+    "correct": "b",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Who played James Bond in the film 'Goldfinger'?",
+    "a": "Roger Moore",
+    "b": "Daniel Craig",
+    "c": "Sean Connery",
+    "d": "Pierce Brosnan",
+    "correct": "c",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the name of the longest-running BBC soap opera?",
+    "a": "Coronation Street",
+    "b": "Hollyoaks",
+    "c": "Emmerdale",
+    "d": "EastEnders",
+    "correct": "d",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which fictional bear was found at Paddington Station?",
+    "a": "Paddington Bear",
+    "b": "Winnie the Pooh",
+    "c": "Rupert Bear",
+    "d": "Baloo",
+    "correct": "a",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "The Beatles came from which English city?",
+    "a": "London",
+    "b": "Liverpool",
+    "c": "Manchester",
+    "d": "Birmingham",
+    "correct": "b",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "In 'Doctor Who', what is the Doctor's time machine called?",
+    "a": "The Dalek",
+    "b": "The Time Vortex",
+    "c": "The TARDIS",
+    "d": "The Sonic",
+    "correct": "c",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which singer is known as the 'Queen of Pop'?",
+    "a": "Adele",
+    "b": "Beyonce",
+    "c": "Lady Gaga",
+    "d": "Madonna",
+    "correct": "d",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "What colour is the animated character Shrek?",
+    "a": "Green",
+    "b": "Blue",
+    "c": "Red",
+    "d": "Brown",
+    "correct": "a",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "In which film series would you find the character Darth Vader?",
+    "a": "Star Trek",
+    "b": "Star Wars",
+    "c": "Harry Potter",
+    "d": "Lord of the Rings",
+    "correct": "b",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "Which ITV show features contestants in a jungle eating bush tucker trials?",
+    "a": "Love Island",
+    "b": "Survivor",
+    "c": "I'm a Celebrity... Get Me Out of Here!",
+    "d": "Big Brother",
+    "correct": "c",
+    "category": "entertainment",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the traditional British dish of battered fish served with?",
+    "a": "Rice",
+    "b": "Pasta",
+    "c": "Noodles",
+    "d": "Chips",
+    "correct": "d",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "Which beverage is the UK most famous for drinking?",
+    "a": "Tea",
+    "b": "Coffee",
+    "c": "Hot Chocolate",
+    "d": "Lemonade",
+    "correct": "a",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of pastry is used to make a traditional Cornish pasty?",
+    "a": "Puff pastry",
+    "b": "Shortcrust pastry",
+    "c": "Filo pastry",
+    "d": "Choux pastry",
+    "correct": "b",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "Champagne originally comes from which country?",
+    "a": "Italy",
+    "b": "Spain",
+    "c": "France",
+    "d": "Germany",
+    "correct": "c",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the main ingredient in guacamole?",
+    "a": "Tomato",
+    "b": "Pepper",
+    "c": "Onion",
+    "d": "Avocado",
+    "correct": "d",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of meat is used in a traditional Sunday roast beef dinner?",
+    "a": "Beef",
+    "b": "Lamb",
+    "c": "Chicken",
+    "d": "Pork",
+    "correct": "a",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "Which fruit is traditionally used to make cider?",
+    "a": "Pears",
+    "b": "Apples",
+    "c": "Grapes",
+    "d": "Plums",
+    "correct": "b",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "A full English breakfast typically includes bacon, eggs, sausages, and what type of beans?",
+    "a": "Kidney beans",
+    "b": "Butter beans",
+    "c": "Baked beans",
+    "d": "Black beans",
+    "correct": "c",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the Italian word for a flat, round bread topped with tomato and cheese?",
+    "a": "Pasta",
+    "b": "Panini",
+    "c": "Focaccia",
+    "d": "Pizza",
+    "correct": "d",
+    "category": "food_drink",
+    "difficulty": 1
+  },
+  {
+    "question": "Which spirit is the main ingredient in a gin and tonic?",
+    "a": "Gin",
+    "b": "Rum",
+    "c": "Vodka",
+    "d": "Whisky",
+    "correct": "a",
+    "category": "food_drink",
+    "difficulty": 1
+  }
+]

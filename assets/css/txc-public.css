@@ -1,0 +1,1001 @@
+/* TXC Public Styles */
+
+/* Page wrapper */
+.txc-page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Competition Grid */
+.txc-competitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.txc-competition-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    background: #fff;
+}
+
+.txc-competition-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.txc-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.txc-card-image {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.txc-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txc-card-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.txc-card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.txc-badge-live, .txc-card-badge.txc-badge-live { background: #00a32a; }
+.txc-badge-sold_out, .txc-card-badge.txc-badge-sold_out { background: #d63638; }
+.txc-badge-drawn, .txc-card-badge.txc-badge-drawn { background: #2271b1; }
+.txc-badge-draft { background: #999; }
+.txc-badge-paused { background: #dba617; }
+.txc-badge-drawing { background: #f0b849; }
+.txc-badge-failed { background: #d63638; }
+.txc-badge-cancelled { background: #666; }
+
+.txc-card-body {
+    padding: 16px;
+}
+
+.txc-card-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.txc-card-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00a32a;
+    margin-bottom: 6px;
+}
+
+.txc-card-tickets {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.txc-card-countdown {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.txc-card-drawn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #135e96;
+}
+
+/* Single Competition */
+.txc-single-competition {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .txc-single-competition {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Gallery */
+.txc-gallery {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.txc-gallery-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.txc-gallery-thumbs {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0;
+    overflow-x: auto;
+}
+
+.txc-gallery-thumb {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.txc-gallery-thumb:hover {
+    border-color: #2271b1;
+}
+
+.txc-gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Competition Info */
+.txc-comp-title {
+    margin: 0 0 16px;
+    font-size: 28px;
+}
+
+.txc-comp-prize {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.txc-comp-prize h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.txc-prize-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #e8e8e8;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+/* Stats */
+.txc-comp-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.txc-stat {
+    text-align: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.txc-stat-label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.txc-stat-value {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Countdown */
+.txc-countdown {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.txc-countdown h3 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.txc-countdown-display {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.txc-cd-unit {
+    background: #1d2327;
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 16px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.txc-cd-num {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.txc-cd-label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+/* Entry Form */
+.txc-entry-form {
+    margin: 24px 0;
+}
+
+.txc-quantity-select {
+    margin-bottom: 16px;
+}
+
+.txc-qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 8px;
+}
+
+.txc-qty-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.txc-qty-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.txc-qty-btn:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.txc-qty-input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    -moz-appearance: textfield;
+}
+
+.txc-qty-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Ticket Quantity Slider */
+.txc-qty-slider {
+    margin: 12px 0;
+}
+
+.txc-range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #00a32a, #2271b1);
+    outline: none;
+}
+
+.txc-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #00a32a;
+    cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+.txc-range-slider::-moz-range-thumb {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #00a32a;
+    cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+.txc-qty-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.txc-total {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Buttons */
+.txc-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.txc-btn-primary {
+    background: #00a32a;
+    color: #fff;
+}
+
+.txc-btn-primary:hover {
+    background: #008a22;
+}
+
+.txc-btn-primary:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.txc-enter-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+}
+
+/* Messages */
+.txc-entry-message {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.txc-success {
+    background: #e6f7e6;
+    color: #00a32a;
+}
+
+.txc-error {
+    background: #fce4e4;
+    color: #d63638;
+}
+
+/* Sold Out */
+.txc-sold-out-banner {
+    background: #d63638;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 24px 0;
+}
+
+/* Tickets Display */
+.txc-your-tickets {
+    margin: 24px 0;
+    padding: 16px;
+    background: #f0f8ff;
+    border-radius: 8px;
+}
+
+.txc-ticket-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.txc-ticket-num {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #2271b1;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.txc-ticket-winner {
+    background: #00a32a;
+}
+
+.txc-ticket-iw {
+    background: #f0b849;
+    color: #333;
+}
+
+/* Draw Result */
+.txc-draw-result {
+    margin: 24px 0;
+    padding: 20px;
+    background: #f0fff0;
+    border: 2px solid #00a32a;
+    border-radius: 8px;
+}
+
+.txc-winner-display {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.txc-winner-ticket-num {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.txc-winner-name-display {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.txc-redraw-notice {
+    background: #fff3cd;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 12px 0;
+}
+
+.txc-rejected-rolls {
+    margin: 12px 0;
+}
+
+.txc-rejected-roll {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #fce4e4;
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 2px 4px;
+}
+
+.txc-verification-hash {
+    margin-top: 12px;
+    font-size: 13px;
+    word-break: break-all;
+}
+
+.txc-verification-hash code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.txc-draw-failed {
+    background: #fce4e4;
+    color: #d63638;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    margin: 24px 0;
+}
+
+/* Qualifying Question Modal */
+.txc-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txc-modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.txc-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.txc-modal-header h3 {
+    margin: 0;
+}
+
+.txc-timer {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+.txc-timer-warning {
+    color: #d63638;
+}
+
+.txc-q-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.txc-q-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.txc-q-option {
+    padding: 12px 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.15s;
+}
+
+.txc-q-option:hover {
+    border-color: #2271b1;
+    background: #f0f7ff;
+}
+
+.txc-q-option.selected {
+    border-color: #2271b1;
+    background: #e6f0ff;
+    font-weight: 600;
+}
+
+.txc-q-option:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.txc-q-result {
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.txc-cooldown {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d63638;
+    margin-top: 10px;
+}
+
+/* Winners List */
+.txc-winners-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.txc-winner-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    background: #fff;
+}
+
+.txc-winner-comp h3 {
+    margin: 0 0 4px;
+}
+
+.txc-winner-prize {
+    color: #666;
+    font-size: 14px;
+}
+
+.txc-winner-details {
+    margin-top: 12px;
+}
+
+.txc-winner-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.txc-winner-hash {
+    margin-top: 8px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+/* My Account */
+.txc-my-competitions h2 {
+    margin-top: 0;
+}
+
+.txc-credit-balance {
+    background: #e6f7e6;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.txc-my-comp-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.txc-my-comp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.txc-my-comp-header h3 {
+    margin: 0;
+}
+
+.txc-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.txc-my-comp-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.txc-my-comp-result {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #e6f7e6;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.txc-iw-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.txc-iw-table th, .txc-iw-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.txc-iw-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Tombstone */
+.txc-tombstone {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.txc-tombstone h1 {
+    color: #666;
+}
+
+.txc-tombstone-date {
+    color: #999;
+}
+
+/* Pause Banner */
+.txc-pause-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #d63638;
+    color: #fff;
+    z-index: 99998;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.txc-license-banner {
+    background: #dba617;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.txc-license-locked {
+    background: #d63638;
+}
+
+/* Social */
+.txc-social-links {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.txc-social-link {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+.txc-social-facebook:hover { background: #1877F2; }
+.txc-social-twitter:hover { background: #000; }
+.txc-social-instagram:hover { background: #E4405F; }
+.txc-social-tiktok:hover { background: #000; }
+
+.txc-share-buttons {
+    margin: 16px 0;
+}
+
+.txc-share-label {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.txc-share-btn {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e8e8e8;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    margin-right: 4px;
+    transition: background 0.2s;
+}
+
+.txc-share-btn:hover {
+    background: #ddd;
+}
+
+/* Watch Draw Link */
+.txc-watch-draw {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.txc-btn-watch-draw {
+    background: #d63638;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.txc-btn-watch-draw:hover {
+    background: #b32d2e;
+    color: #fff;
+}
+
+/* User Allowance Notice */
+.txc-user-allowance {
+    background: #e6f0ff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #135e96;
+}
+
+/* Instant Wins Public Display */
+.txc-instant-wins-display {
+    margin: 24px 0;
+    padding: 16px;
+    background: #fffbf0;
+    border: 1px solid #f0b849;
+    border-radius: 8px;
+}
+
+.txc-instant-wins-display h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.txc-iw-public-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.txc-iw-public-table th,
+.txc-iw-public-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 14px;
+}
+
+.txc-iw-public-table th {
+    background: #f8f5ee;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.txc-iw-claimed {
+    background: #f0fff0;
+}
+
+.txc-iw-unclaimed {
+    background: #fff;
+}
+
+.txc-iw-badge-claimed {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #00a32a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.txc-iw-badge-unclaimed {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #ddd;
+    color: #666;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.txc-iw-ticket {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 600px) {
+    .txc-iw-public-table th:nth-child(4),
+    .txc-iw-public-table td:nth-child(4) {
+        display: none;
+    }
+}
+
+/* Draw Animation */
+.txc-draw-animation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.txc-draw-countdown {
+    font-size: 72px;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+.txc-draw-number {
+    font-size: 64px;
+    font-weight: 700;
+    padding: 20px 40px;
+    background: #1d2327;
+    color: #fff;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 150px;
+    font-variant-numeric: tabular-nums;
+}
+
+.txc-draw-rejected {
+    color: #d63638;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.txc-draw-winner-reveal {
+    color: #00a32a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+/* Alpine cloak */
+[x-cloak] { display: none !important; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .txc-comp-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .txc-countdown-display {
+        gap: 6px;
+    }
+
+    .txc-cd-unit {
+        padding: 8px 10px;
+        min-width: 50px;
+    }
+
+    .txc-cd-num {
+        font-size: 22px;
+    }
+
+    .txc-winner-meta {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

@@ -1,0 +1,109 @@
+/* TXC Admin Styles */
+
+.txc-meta-table {
+    width: 100%;
+}
+
+.txc-meta-table th {
+    width: 200px;
+    vertical-align: top;
+    padding-top: 14px;
+}
+
+/* Gallery */
+#txc-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.txc-gallery-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.txc-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txc-gallery-remove {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: rgba(214,54,56,0.9);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+}
+
+/* Badges */
+.txc-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.txc-badge-green { background: #00a32a; }
+.txc-badge-red { background: #d63638; }
+.txc-badge-blue { background: #2271b1; }
+.txc-badge-yellow { background: #dba617; }
+
+/* Modals */
+.txc-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txc-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.txc-modal-content h3 {
+    margin-top: 0;
+}
+
+/* License page */
+.txc-license-status {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+/* Draw page table */
+.txc-draw-btn,
+.txc-redraw-btn,
+.txc-view-draw-btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
